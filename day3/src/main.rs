@@ -86,8 +86,8 @@ fn sum_part_numbers(schematic: &[&str]) -> i32 {
 }
 
 fn is_adjacent_to_symbol(schematic: &[&str], y: usize, x_start: usize, x_end: usize) -> bool {
-    let y_start = (y as i32 - 1).max(0) as usize
-    let y_end = (y as i32 + 1).min(schematic.len() as i32 - 1) as usize
+    let y_start = (y as i32 - 1).max(0) as usize;
+    let y_end = (y as i32 + 1).min(schematic.len() as i32 - 1) as usize;
 
     for ny in y_start..=y_end
     {
